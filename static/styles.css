@@ -1,0 +1,30 @@
+h1
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 7px;
+}
+
+.cont
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 7px;
+}
+
+.cuadrado
+{
+    width: 348px;
+    height: 348px;
+    border: 2px solid black;
+    /* background-color: #9fc4f8; */
+    margin: 0px 22px 22px 0px;
+}

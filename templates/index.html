@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles.css')}}">
+    <title>Playground</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    {% if funcion == "play" %}
+        <div class="cont">
+            {% for x in range(0,veces): %}
+            <div class="cuadrado" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% if funcion == "playX"%}
+        <div class="contenedor">
+            {% for x in range(0,veces): %}
+            <div class="cuadrado" style="background-color: {{color}};"></div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
