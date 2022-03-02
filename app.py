@@ -1,11 +1,10 @@
-from turtle import color
 from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html", funcion="", veces=0)
+    return render_template("index.html", funcion="", veces=0,color="")
 
 @app.route('/play')
 def play():
